@@ -19,3 +19,14 @@ def decode_code(morse_code)
   end
   actual_word
 end
+
+def decode(morse_sentence)
+  words = []
+
+  morse_sentence.split('   ').each do |word|
+    words.push(decode_code(word))
+  end
+  words.join(' ')
+end
+
+print decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
