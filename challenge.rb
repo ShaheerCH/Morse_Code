@@ -19,4 +19,3 @@ def decode_code(morse_code)
   end
   actual_word
 end
-
